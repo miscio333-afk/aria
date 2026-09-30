@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aria — Non sei polvere (primo singolo)</title>
+<meta name="description" content="Aria, primo singolo «Non sei polvere» — coming soon. Una performance, un take solo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#finale">Salta il racconto</a>
+<header class="site-header">
+  <span class="brand">Aria<em>®</em></span>
+  <nav><a href="#bio">Bio</a><a href="#ascolta">Ascolta</a><a href="#contatti">Contatti</a></nav>
+</header>
+
+<main>
+<section class="stage-wrap" id="stage-wrap" aria-label="Performance di Aria guidata dallo scroll">
+  <div class="stage">
+    <canvas id="stage" width="1440" height="810" aria-hidden="true"></canvas>
+    <img id="poster" src="public/poster-start.webp" alt="Primo piano di Aria mentre canta">
+    <div class="grain" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
+    <div class="bar bar-top" aria-hidden="false">
+      <span id="slot-num">01 / 10</span>
+      <div id="caption" class="cap" aria-live="polite"><p class="cap-line"></p><p class="cap-sub"></p></div>
+    </div>
+    <div class="bar bar-bottom" aria-hidden="true">
+      <span class="bar-title">Aria — <em>Non sei polvere</em></span>
+      <div class="progress"><span id="progress-bar"></span></div>
+    </div>
+
+    <div class="copy copy-left" data-chapter="hero">
+      <p class="kicker"><span class="dot"></span>Primo singolo · Coming soon</p>
+      <h1 class="oneline">Non sei <em>polvere</em></h1>
+      <p class="byline">Aria — cantato dal vivo, un take solo.</p>
+      <button id="audio-btn" type="button">Ascolta <span aria-hidden="true">→</span></button>
+    </div>
+
+    <div class="copy copy-side" data-chapter="climax">
+      <p class="verse">« … »</p>
+      <h2>Voce, emozione,<br>verità.</h2>
+    </div>
+
+    <div class="copy copy-left" data-chapter="finale" id="finale">
+      <p class="kicker"><span class="dot"></span>Primo singolo · Coming soon</p>
+      <h2>Non sei<br>polvere.</h2>
+      <p><a class="cta" href="mailto:ciao@aria.music?subject=Avvisami%20—%20Non%20sei%20polvere">Avvisami all'uscita →</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="after" id="bio">
+  <p class="kicker"><span class="dot"></span>Bio</p>
+  <h2>Aria canta piano<br>per farsi sentire <em>forte</em>.</h2>
+  <p>Biografia in arrivo con l'uscita del singolo.</p>
+</section>
+<section class="after" id="ascolta">
+  <p class="kicker"><span class="dot"></span>Ascolta</p>
+  <h2>Il brano arriva.<br>La voce c'è già.</h2>
+  <audio controls preload="none" src="public/audio/song.m4a"></audio>
+  <details><summary>Testo del brano</summary><p>Testo in arrivo con l'uscita del singolo.</p></details>
+</section>
+</main>
+<footer class="site-footer" id="contatti">
+  <span>Aria — <em>Non sei polvere</em></span>
+  <a href="mailto:ciao@aria.music">ciao@aria.music</a>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
